@@ -1,0 +1,177 @@
+ *{
+  max-width: 1680px;
+
+}
+
+.container{
+ position: relative;
+ display: flexbox;
+ /* background-color: aqua; */
+ width: 100vb;
+}
+.box{
+  display: flex;
+  position: absolute;
+  width:220px;
+  height: 150px;
+  background-color: rgba(3,152,158,255);}
+  #box1{
+    background-color: rgba(3,152,158,255)
+  }
+  #box2{
+    background-color: rgba(3,152,158,255);
+    left: 235px;
+    
+  }
+  #box3{
+    background-color: rgba(3,152,158,255);
+    left:481px;
+  }
+  #box4{
+    background-color: rgba(3,152,158,255);
+    top: 160px;
+    width:700px ;
+  }
+  #box8{
+    background-color: rgba(203,225,101,255);
+    top: 320px;
+    width:700px ;
+    height: 2rem;
+  }
+.circle{
+  display: flex;
+  position: absolute;
+  width:300px;
+  height: 150px;
+  background-color: rgb(137, 14, 24);
+  border-radius:50%;
+  width: 2rem;
+  height: 2rem; 
+  z-index: 100;
+}
+
+.color-pink{
+  background-color: rgba(255,135,135,255);
+}
+.color-yellow{
+  background-color: rgba(249,224,97,255);
+}
+#circle-1{
+  left: 3%;
+  
+  }
+#circle-2{
+ z-index: 100;
+ justify-content: left; 
+ left: 15%;
+ width: 3rem;
+ height: 3rem;
+ top: 3rem;
+}
+#circle-3{
+  left: 3%;
+  margin-top: 12%;
+ 
+}
+ #circle-4{
+  left: 22%;
+  margin-top: 14%;
+  width: 3rem;
+  height: 3rem;
+  
+
+ }
+ #circle-5{
+  left: 40%;
+  margin-top: 3%;
+  
+ }
+ #circle-6{
+  left: 9%;
+  margin-top: 20%;
+  
+ }
+
+ .triangle {
+  width: 0;
+  height: 0;
+  border-top: 0;
+ 
+  
+  display: flex;
+  position: absolute;
+}
+.tri1{
+  border: 80px solid transparent;
+  border-bottom: 90px solid rgba(201,225,101,255); 
+  left: 58%;
+  margin-top: 15%;
+  z-index: 10;
+}
+ 
+.tri2{
+  border: 79px solid transparent;
+  border-bottom: 188px solid rgba(0,128,54,255); 
+  left: 44%;
+  margin-top: 4.7%;
+  z-index: 9;
+}
+
+
+.image{
+  display: flex;
+  position: absolute;
+  margin-top: 25.9%;
+  z-index: 20;
+  
+}
+img{
+  width: 44px;
+}
+.bottom{
+  position: absolute;
+  background-color: rgb(63, 8, 10);
+  margin-top: 40%;
+  width: 44rem;
+  z-index: 45;
+  height: 4%;
+ 
+}
+
+
+.review{
+  position: absolute;
+  margin-top: 25.9%;
+  z-index: 20;
+  margin-top: 40%;
+
+  width: 38%;
+  height: 30%;
+}
+
+
+ /*RESPONSIVE*/
+  /* Media Query for Mobile Devices */
+  @media  (max-width: 1024px) {
+    body {
+        background-color: red;
+        width: calc( 100% /2);
+        display: block;
+        
+    }
+}
+ 
+   /* Media Query for Tablets Ipads portrait mode */
+   @media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+      display: block;
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1050px) and (max-width: 1680px){
+    body {
+        width: calc( 100%);
+    }
+}
